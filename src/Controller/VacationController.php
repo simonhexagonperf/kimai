@@ -69,7 +69,7 @@ class VacationController extends AbstractController
             $endDate = null;
         }
         $allUsers = [];
-        $allUsernames = array('simon', 'pierre');
+        $allUsernames = array('simon', 'pierre', 'julien');
         if ($formUsername == null) {
             $selectedUsers = $allUsernames;
         }
