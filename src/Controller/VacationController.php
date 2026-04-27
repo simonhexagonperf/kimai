@@ -85,6 +85,7 @@ class VacationController extends AbstractController
             if (in_array($user->getUsername(), $selectedUsers)) {
                 $this->getMonthlyActivity($years, 'vacation', 'Vacation', 'Vacation', $user, $startDate, $endDate);
                 $this->getMonthlyActivity($years, 'rtt', 'Vacation','RTT', $user, $startDate, $endDate);
+                $this->getMonthlyActivity($years, 'rtt', 'Vacation','RTT (RepoFJ)', $user, $startDate, $endDate);
                 $this->getMonthlyActivity($yearsGlobal, 'total', null, null, $user, $startDate, $endDate);
             }
         }
