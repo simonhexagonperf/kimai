@@ -24,7 +24,7 @@
                         <th>{{ 'project'|trans }}</th>
                         <th>{{ 'activity'|trans }}</th>
                         {% for id, week in days %}
-                        <th class="text-center{% if week.day is weekend %} weekend{% endif %}{% if week.day is today %} today{% endif %}">
+                        <th class="text-center{% if week.day is weekend %} weekend{% endif %}">
                             {{ week.day|date_weekday }}
                         </th>
                         {% endfor %}
