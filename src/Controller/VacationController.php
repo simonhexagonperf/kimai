@@ -195,7 +195,7 @@ class VacationController extends AbstractController
             if ($user != null) {
                 $func = "set" . ucwords($setter);
                 $user->$func($statRow['duration']);
-                if ($activity == 'Vacation' || $activity == 'RTT') {
+                if ($activity == 'Vacation' || $activity == 'RTT' || $activity == 'RTT (RepoFJ)') {
                     $year->sumVacationForUser($statRow['ualias'], $statRow['duration']);
                     $month->sumVacationForUser($statRow['ualias'], $statRow['duration']);
                 }
